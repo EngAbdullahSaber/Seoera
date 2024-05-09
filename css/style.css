@@ -1,0 +1,349 @@
+/***Start Style of Global***/
+:root {
+  --main-color: #1149ae;
+}
+html {
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.row {
+  margin-right: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons button {
+  padding: 0 25px;
+  border-radius: 4px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  border: solid 1px var(--main-color);
+  cursor: pointer;
+}
+.buttons button:after,
+.buttons button:before {
+  width: 0%;
+  height: 0%;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+}
+.buttons button:after {
+  transition: all 0.5s ease;
+  background-color: white;
+}
+.buttons button:before {
+  transition: all 0.5s ease-out;
+  background: var(--main-color);
+}
+.buttons button span {
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+.buttons button.cta-01 {
+  background: linear-gradient(90deg, #1149ae 0%, #103c8e 100%);
+  color: white;
+}
+.buttons button.cta-02 {
+  background-color: transparent;
+  color: #fff;
+}
+.buttons button.cta-02:after {
+  background: linear-gradient(90deg, #1149ae 0%, #103c8e 100%);
+}
+.buttons button:hover.cta-01 {
+  color: #000 !important;
+}
+.buttons button:hover.cta-02 {
+  color: white;
+}
+.buttons button:hover:after,
+.buttons button:hover:before {
+  width: 225px;
+  height: 200px;
+  border-radius: 4px;
+}
+.buttons button:hover:after {
+  transition: all 0.7s ease-in;
+}
+.buttons button:hover:before {
+  transition: all 0.5s ease-in;
+}
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  outline: 1px solid rgba(53, 136, 76, 0.191);
+  border-radius: 15%;
+}
+/***End Style of Global***/
+/***Start Style of Upper bar***/
+.upper_bar,
+.navber__section {
+  background-color: #00000038;
+  color: #fff;
+  z-index: 999;
+}
+.upper_bar .list__bar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.upper_bar .list__bar li {
+  margin: 0.4rem;
+  border-left: 1px solid #ccc;
+}
+.upper_bar .list__bar li:first-of-type,
+.upper_bar .dropdown li {
+  border: 0px;
+}
+.upper_bar .dropdown button {
+  border: none;
+  background-color: transparent;
+  color: black;
+}
+/***End Style of Upper bar***/
+/***Start Style of navbar***/
+.navber__section button {
+  background-color: var(--main-color);
+  border: 0;
+}
+.navbar__butoon {
+  font-size: 0.9rem !important;
+  padding: 10px !important;
+}
+.button__scroll {
+  border: 1px solid #fff !important;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+}
+.scroll {
+  background-color: var(--main-color);
+}
+/***End Style of navbar***/
+/***Start Style of Hero Section***/
+.hero {
+  background-image: url("../images/img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 94vh;
+}
+/***End Style of Hero Section***/
+/***Start Style of Testmonial Section***/
+.caregory button {
+  border-radius: 12px;
+  background-color: var(--main-color);
+}
+.caregory h3::after {
+  content: "";
+  margin: 4px auto 0px;
+  display: block;
+  width: 10%;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(25deg, #203986, #550eda);
+}
+.img__content {
+  height: 90%;
+}
+.big__img {
+  aspect-ratio: 2/2;
+  border-radius: 30px;
+  box-shadow: 5px 10px 16px #ccc;
+}
+.smal__img {
+  border-radius: 30px;
+  aspect-ratio: 3/2;
+  box-shadow: 5px 10px 16px #ccc;
+}
+.meduim__img {
+  border-radius: 30px;
+  aspect-ratio: 3/4;
+  box-shadow: 5px 10px 16px #ccc;
+}
+.img__content {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.img__content:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+.image__content {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.image__content:hover {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+.image__content1:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/***End  Style of Testmonial Section***/
+/***End  Style of Category Section***/
+.card-body img {
+  top: -38px;
+  right: 21px;
+}
+.testmonial .card-body span::after {
+  content: "";
+  width: 15px;
+  height: 37px;
+  top: 40px;
+  right: -8px;
+  background-color: #daddc6;
+  content: "";
+  position: absolute;
+  border-width: 7px;
+  border-color: transparent transparent #171934 #171934;
+  border-style: solid;
+}
+.title__info {
+  margin: 0px;
+  background-color: #818f14;
+  color: #fff;
+  padding: 15px;
+  padding: 0.2rem 0.5rem 0.5rem 0.6rem;
+  position: absolute;
+  display: inline-block;
+  right: -31px;
+  text-align: center;
+  z-index: 9999;
+}
+.title__info h5 {
+  margin-bottom: 0;
+}
+.title__info:after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: -14px;
+  border-width: 7px;
+  border-color: transparent transparent #818f14 #818f14;
+  border-style: solid;
+}
+.testmonial .back-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100;
+  transition: transform 0.4s ease-in;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(54, 45, 183) 16%,
+    rgb(111, 28, 207) 82%,
+    rgb(29, 13, 129) 100%
+  );
+  z-index: -1;
+  border-radius: 20px;
+}
+.testmonial .thid-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-in;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(54, 45, 183) 16%,
+    rgb(111, 28, 207) 82%,
+    rgb(29, 13, 129) 100%
+  );
+  z-index: -1;
+  border-radius: 20px;
+}
+.testmonial .card:hover {
+  box-shadow: 0 !important;
+}
+.testmonial .card:hover .back-card {
+  transform: rotate(15deg);
+}
+.testmonial .card:hover .thid-card {
+  transform: rotate(5deg);
+}
+/***End  Style of Category Section***/
+/***Start  Style of tours Section***/
+.tours i {
+  color: var(--main-color);
+}
+.price {
+  background-color: #ebe6e6;
+  padding: 10px;
+  border-radius: 16px;
+}
+.tours .card,
+.tours .card__img {
+  overflow: hidden;
+}
+.tours img {
+  transition: all 0.5s ease;
+}
+.tours img:hover {
+  scale: 1.1;
+}
+.tours .card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 5px 1px,
+    rgba(0, 0, 0, 0.1) 1px 1px 1px 1px;
+  transition: all 0.6s ease;
+}
+.tours .card:hover {
+  box-shadow: rgba(129, 143, 20, 0.111) -4px 4px,
+    rgba(83, 80, 76, 0.19) -7px 7px;
+}
+
+/***End  Style of tours Section***/
